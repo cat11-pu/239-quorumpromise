@@ -1,0 +1,13 @@
+{
+  "param_error_code": "E_BAD_PARAM",
+  "quorum_error_code": "E_BAD_QUORUM",
+  "op_error_code": "E_BAD_OP",
+  "acceptors": 3,
+  "quorum": 2,
+  "ops": [
+    { "ballot": 1, "value": 5 },
+    { "ballot": 2, "value": 7 },
+    { "ballot": 1, "value": 9 },
+    { "ballot": 2, "value": 7 }
+  ]
+}
