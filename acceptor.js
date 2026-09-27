@@ -1,4 +1,7 @@
-// acceptor.js：一个接受者的判决（基线：一律接受）
+// acceptor.js：一个接受者的判决（票号不小于已承诺票号才接受，并推进承诺票号）
 export function judge(promised, ballot) {
-  return { promised: promised, accept: true };
+  if (ballot >= promised) {
+    return { promised: ballot, accept: true };
+  }
+  return { promised: promised, accept: false };
 }
